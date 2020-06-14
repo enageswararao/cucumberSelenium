@@ -27,8 +27,9 @@ public void setup() {
 
    String log4Jpath=System.getProperty("user.dir")+"/log4j.properties";
    PropertyConfigurator.configure(log4Jpath);
-	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver/chromedriver.exe");
-	logger.info("Chrome Driver exe location:"+System.getProperty("user.dir")+"/drivers/chromedriver/chromedriver.exe");	
+	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver/chromedriver.exe");
+	//logger.info("Chrome Driver exe location:"+System.getProperty("user.dir")+"/drivers/chromedriver/chromedriver.exe");	
+	WebDriverManager.chromedriver().setup();
 	   driver=new ChromeDriver();
 		logger.info("Chrome Driver is Opened");
 	 
