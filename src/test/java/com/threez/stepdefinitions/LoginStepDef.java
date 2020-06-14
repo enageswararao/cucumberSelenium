@@ -5,7 +5,7 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 import com.hrmapp.pages.LoginPage;
 
 import cucumber.api.java.After;
@@ -27,9 +27,9 @@ public void setup() {
 
    String log4Jpath=System.getProperty("user.dir")+"/log4j.properties";
    PropertyConfigurator.configure(log4Jpath);
-	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver/chromedriver.exe");
+	 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	//logger.info("Chrome Driver exe location:"+System.getProperty("user.dir")+"/drivers/chromedriver/chromedriver.exe");	
-	WebDriverManager.chromedriver().setup();
+//	WebDriverManager.chromedriver().setup();
 	   driver=new ChromeDriver();
 		logger.info("Chrome Driver is Opened");
 	 
