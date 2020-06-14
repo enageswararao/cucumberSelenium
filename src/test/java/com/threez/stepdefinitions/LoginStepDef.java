@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import io.github.bonigarcia.wdm.WebDriverManager;
 import com.hrmapp.pages.LoginPage;
-
+import org.openqa.selenium.chrome.ChromeOptions;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -30,7 +30,7 @@ public void setup() {
    PropertyConfigurator.configure(log4Jpath);
 	
   Map<String, Object> preferences = new Hashtable<String, Object>();
-    preferences.put("download.default_directory", path);
+  //  preferences.put("download.default_directory", path);
     ChromeOptions options = new ChromeOptions();
      options.addArguments("--headless");
      options.addArguments("--no-sandbox");
