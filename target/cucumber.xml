@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="39.764973">
+<testcase classname="Login Orange HRM application" name="Login Orange HRM application with Valid cradentials" time="23.715952">
+<system-out><![CDATA[Given load the Orange HRM application url...................................passed
+When Enter the user name in Username textbox................................passed
+And Enter the Password in Password Textbox..................................passed
+And Click on Login Button...................................................passed
+Then Verify the message,"Welcome Admin".....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Orange HRM application" name="Login Orange HRM application with Valid2 cradentials" time="16.049021">
+<system-out><![CDATA[Given load the Orange HRM application url...................................passed
+When Enter the user name in Username textbox................................passed
+And Enter the Password in Password Textbox..................................passed
+And Click on Login Button...................................................passed
+Then Verify the message,"LoginFailed".......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

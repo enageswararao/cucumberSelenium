@@ -1,0 +1,220 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12828886400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.setup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login Orange HRM application with Valid cradentials",
+        "description": "",
+        "id": "login-orange-hrm-application;login-orange-hrm-application-with-valid-cradentials",
+        "after": [
+          {
+            "result": {
+              "duration": 1465290400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3890768000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "load the Orange HRM application url",
+            "match": {
+              "location": "LoginStepDef.load_the_Orange_HRM_application_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 379057400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter the user name in Username textbox",
+            "match": {
+              "location": "LoginStepDef.enter_the_user_name_in_Username_textbox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 226915800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the Password in Password Textbox",
+            "match": {
+              "location": "LoginStepDef.enter_the_Password_in_Password_Textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4915681100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on Login Button",
+            "match": {
+              "location": "LoginStepDef.click_on_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9352800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify the message,\"Welcome Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome Admin",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginStepDef.verify_the_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7006694700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login Orange HRM application with Valid2 cradentials",
+        "description": "",
+        "id": "login-orange-hrm-application;login-orange-hrm-application-with-valid2-cradentials",
+        "after": [
+          {
+            "result": {
+              "duration": 1547613500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2810019300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "load the Orange HRM application url",
+            "match": {
+              "location": "LoginStepDef.load_the_Orange_HRM_application_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 147327800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Enter the user name in Username textbox",
+            "match": {
+              "location": "LoginStepDef.enter_the_user_name_in_Username_textbox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 182433500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter the Password in Password Textbox",
+            "match": {
+              "location": "LoginStepDef.enter_the_Password_in_Password_Textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4354802500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click on Login Button",
+            "match": {
+              "location": "LoginStepDef.click_on_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Verify the message,\"LoginFailed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LoginFailed",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginStepDef.verify_the_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Login Orange HRM application",
+    "description": "As a test engeneer to validate login functionality of the Orange HRM application with all the combinations",
+    "id": "login-orange-hrm-application",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
