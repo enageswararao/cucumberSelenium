@@ -13,7 +13,8 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
- 
+ import java.util.Map;
+import java.util.Hashtable;
 public class LoginStepDef {
 	final static Logger logger = Logger.getLogger(LoginStepDef.class);
      WebDriver driver=null;
@@ -27,10 +28,23 @@ public void setup() {
 
    String log4Jpath=System.getProperty("user.dir")+"/log4j.properties";
    PropertyConfigurator.configure(log4Jpath);
-	 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	
+  Map<String, Object> preferences = new Hashtable<String, Object>();
+    preferences.put("download.default_directory", path);
+    ChromeOptions options = new ChromeOptions();
+     options.addArguments("--headless");
+     options.addArguments("--no-sandbox");
+    options.setExperimentalOption("prefs", preferences);
+    //String path = System.getProperty("user.dir")+ File.separator + "drivers"+File.separator + "chromedriver";
+     System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+ //  System.setProperty("webdriver.chrome.driver",path);
+    driver=new ChromeDriver(options);
+	
+	
+	// System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	//logger.info("Chrome Driver exe location:"+System.getProperty("user.dir")+"/drivers/chromedriver/chromedriver.exe");	
-//	WebDriverManager.chromedriver().setup();
-	   driver=new ChromeDriver();
+       //WebDriverManager.chromedriver().setup();
+	//   driver=new ChromeDriver();
 		logger.info("Chrome Driver is Opened");
 	 
 }
