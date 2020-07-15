@@ -85,6 +85,8 @@ public void click_on_Login_Button()   {
 @SuppressWarnings("deprecation")
 @Then("^Verify the message,\"([^\"]*)\"$")
 public void verify_the_message(String arg1)   {
+	
+	Assert.assertTrue(false);
 		/*
 		 * loginpage.getUserName().sendKeys("Admin"); //Assert.assertEquals(username,
 		 * profilepage.getText(profilepage.welcometxt));
